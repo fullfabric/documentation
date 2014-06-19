@@ -8,7 +8,7 @@ Security Assertion Markup Language (SAML) is an XML standard that allows secure 
 
 FULL FABRIC offers a SAML-based Single Sign-On (SSO) service that provides universities and other institutions with full control over the authorization of user accounts that can access FULL FABRIC. Using the SAML model, FULL FABRIC acts as the *service provider*, whereas clients act as the *identity provider*. Identity providers control usernames, passwords and other information used to identify and authenticate users.
 
-The FULL FABRIC SSO service is based on the SAML v2.0 specifications. SAML v2.0 is supported by several widely known vendors.
+The FULL FABRIC SSO service is based on the SAML specifications. SAML v2.0 is supported by several widely known vendors.
 
 #### SAML-based SSO with FULL FABRIC
 
@@ -29,4 +29,4 @@ The IdP must provide FULL FABRIC with:
 
 ##### Use Case
 
-[http://en.wikipedia.org/wiki/Security_Assertion_Markup_Language#The_SAML_Use_Case](http://en.wikipedia.org/wiki/Security_Assertion_Markup_Language#The_SAML_Use_Case)
+[http://en.wikipedia.org/wiki/SAML_2.0#Web_Browser_SSO_Profile](http://en.wikipedia.org/wiki/SAML_2.0#Web_Browser_SSO_Profile)
