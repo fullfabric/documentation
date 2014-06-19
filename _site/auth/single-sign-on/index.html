@@ -1,0 +1,60 @@
+<!doctype html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="chrome=1">
+    <title>Documentation</title>
+
+    <link rel="stylesheet" href="/stylesheets/styles.css">
+    <link rel="stylesheet" href="/stylesheets/pygment_trac.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no">
+    <!--[if lt IE 9]>
+    <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+  </head>
+  <body>
+    <div class="wrapper">
+      <header>
+        <h2>Technical Documentation</h2>
+        <br />
+        <h3>Authentication</h3>
+        <a href="/auth/single-sign-on">Single Sign-On with SAML</a>
+      </header>
+      <section><h3 id="single-sign-on-sso-with-saml">Single Sign-On (SSO) with SAML</h3>
+
+<p>Security Assertion Markup Language (SAML) is an XML standard that allows secure web domains to exchange user authentication and authorization data. Using SAML, an online service provider can contact a separate online identity provider to authenticate users who are trying to access secure content.</p>
+
+<p>FULL FABRIC offers a SAML-based Single Sign-On (SSO) service that provides universities and other institutions with full control over the authorization of user accounts that can access FULL FABRIC. Using the SAML model, FULL FABRIC acts as the <em>service provider</em>, whereas clients act as the <em>identity provider</em>. Identity providers control usernames, passwords and other information used to identify and authenticate users.</p>
+
+<p>The FULL FABRIC SSO service is based on the SAML v2.0 specifications. SAML v2.0 is supported by several widely known vendors.</p>
+
+<h4 id="saml-based-sso-with-full-fabric">SAML-based SSO with FULL FABRIC</h4>
+
+<p>The following process explains how a user logs into FULL FABRIC via a SAML-based SSO service.</p>
+
+<h5 id="actors">Actors</h5>
+
+<ul>
+  <li>IdP - Identity Provider: The university, school or institution</li>
+  <li>SP - Service Provider: FULL FABRIC</li>
+  <li>User</li>
+</ul>
+
+<h5 id="setup">Setup</h5>
+
+<p>The IdP must provide FULL FABRIC with:</p>
+
+<ul>
+  <li>the URL for its SSO service</li>
+  <li>the public key that FULL FABRIC should use to verify SAML responses</li>
+</ul>
+
+<h5 id="use-case">Use Case</h5>
+
+<p><a href="http://en.wikipedia.org/wiki/Security_Assertion_Markup_Language#The_SAML_Use_Case">http://en.wikipedia.org/wiki/Security_Assertion_Markup_Language#The_SAML_Use_Case</a></p>
+</section>
+      <footer></footer>
+    </div>
+    <script src="/javascripts/scale.fix.js"></script>
+  </body>
+</html>
