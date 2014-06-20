@@ -46,8 +46,24 @@
 
 <ul>
   <li>the URL for its SSO service</li>
-  <li>the public key that FULL FABRIC should use to verify SAML responses</li>
+  <li>
+    <p>the public key used to verify authenticity of SAML responses</p>
+  </li>
+  <li>SP initiation endpoint: <code>https://*.fullfabric.com/auth/saml</code></li>
+  <li>SP callback endpoint: <code>https://*.fullfabric.com/auth/saml/callback</code></li>
 </ul>
+
+<h5 id="flow">Flow</h5>
+
+<ol>
+  <li>The User attempts to reach the SP</li>
+  <li>SP generates a SAML authentication request</li>
+  <li>SP sends a redirect to the User’s browser for the IdP’s SSO target endpoint. The redirect URL includes the encoded SAML authentication request that should be submitted to the IdP’s SSO service</li>
+  <li>IdP decodes the SAML request and authenticates the User either by asking for valid login credentials or by checking for valid session cookies</li>
+  <li>IdP generates a SAML response that contains the authenticated User’s details. In accordance with the SAML 2.0 specification, this response is digitally signed with the IdP’s public and private DSA/RSA keys.</li>
+  <li>The partner encodes the SAML response and returns that information to the User’s browser. The IdP provides a mechanism so that the browser can forward that information to the SP.</li>
+  <li>SP verifies the SAML response using the IdP’s public key. If the response is successfully verified, the SP authenticates the User. If the User does not exist, it is created based on the details provided by the IdP.</li>
+</ol>
 
 <h5 id="use-case">Use Case</h5>
 
