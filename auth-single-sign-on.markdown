@@ -27,6 +27,8 @@ The IdP must provide FULL FABRIC with:
 * the URL for its SSO service
 * the public key used to verify authenticity of SAML responses
 
+The SP details are:
+
 * SP initiation endpoint: `https://*.fullfabric.com/auth/saml`
 * SP callback endpoint: `https://*.fullfabric.com/auth/saml/callback`
 
